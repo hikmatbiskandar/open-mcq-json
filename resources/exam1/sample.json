@@ -1,2 +1,387 @@
 {
+  "version": "0.0.1",
+  "author": "Hikmat bin Iskandar",
+  "organization": "Hikmat's Company",
+  "steps": [
+    {
+      "question-key": "q1",
+      "title": "Who was the first president of the United States?",
+      "description": "Select the correct answer.",
+      "options": [
+        {
+          "question": "Select the first president of the United States.",
+          "answers": [
+            {
+              "text": "George Washington",
+              "key": "george-washington",
+              "goto": "q2",
+              "point": 1
+            },
+            {
+              "text": "Thomas Jefferson",
+              "key": "thomas-jefferson",
+              "goto": "q2",
+              "point": 0
+            },
+            {
+              "text": "Abraham Lincoln",
+              "key": "abraham-lincoln",
+              "goto": "q2",
+              "point": 0
+            },
+            {
+              "text": "John Adams",
+              "key": "john-adams",
+              "goto": "q2",
+              "point": 0
+            }
+          ]
+        }
+      ],
+      "image": "https://placehold.co/600x400",
+      "tooltips": []
+    },
+    {
+      "question-key": "q2",
+      "title": "Which document declared the independence of the United States?",
+      "description": "Choose the correct answer.",
+      "options": [
+        {
+          "question": "Select the document that declared the independence of the United States.",
+          "answers": [
+            {
+              "text": "Declaration of Independence",
+              "key": "declaration-of-independence",
+              "goto": "q3",
+              "point": 1
+            },
+            {
+              "text": "Constitution of the United States",
+              "key": "constitution",
+              "goto": "q3",
+              "point": 0
+            },
+            {
+              "text": "Emancipation Proclamation",
+              "key": "emancipation-proclamation",
+              "goto": "q3",
+              "point": 0
+            },
+            {
+              "text": "Bill of Rights",
+              "key": "bill-of-rights",
+              "goto": "q3",
+              "point": 0
+            }
+          ]
+        }
+      ],
+      "image": "https://placehold.co/600x400",
+      "tooltips": []
+    },
+    {
+      "question-key": "q3",
+      "title": "Who was the author of the Declaration of Independence?",
+      "description": "Pick the correct answer.",
+      "options": [
+        {
+          "question": "Select the author of the Declaration of Independence.",
+          "answers": [
+            {
+              "text": "Thomas Jefferson",
+              "key": "thomas-jefferson",
+              "goto": "q4",
+              "point": 1
+            },
+            {
+              "text": "George Washington",
+              "key": "george-washington",
+              "goto": "q4",
+              "point": 0
+            },
+            {
+              "text": "Benjamin Franklin",
+              "key": "benjamin-franklin",
+              "goto": "q4",
+              "point": 0
+            },
+            {
+              "text": "John Adams",
+              "key": "john-adams",
+              "goto": "q4",
+              "point": 0
+            }
+          ]
+        }
+      ],
+      "image": "https://placehold.co/600x400",
+      "tooltips": []
+    },
+    {
+      "question-key": "q4",
+      "title": "Which event led to the start of the American Revolutionary War?",
+      "description": "Select the correct event.",
+      "options": [
+        {
+          "question": "Choose the event that led to the start of the American Revolutionary War.",
+          "answers": [
+            {
+              "text": "Battle of Lexington and Concord",
+              "key": "lexington-and-concord",
+              "goto": "q5",
+              "point": 1
+            },
+            {
+              "text": "Boston Tea Party",
+              "key": "boston-tea-party",
+              "goto": "q5",
+              "point": 0
+            },
+            {
+              "text": "Signing of the Treaty of Paris",
+              "key": "treaty-of-paris",
+              "goto": "q5",
+              "point": 0
+            },
+            {
+              "text": "Boston Massacre",
+              "key": "boston-massacre",
+              "goto": "q5",
+              "point": 0
+            }
+          ]
+        }
+      ],
+      "image": "https://placehold.co/600x400",
+      "tooltips": []
+    },
+    {
+      "question-key": "q5",
+      "title": "Who served as the president during the Civil War?",
+      "description": "Pick the correct answer.",
+      "options": [
+        {
+          "question": "Select the president who served during the Civil War.",
+          "answers": [
+            {
+              "text": "Abraham Lincoln",
+              "key": "abraham-lincoln",
+              "goto": "q6",
+              "point": 1
+            },
+            {
+              "text": "Thomas Jefferson",
+              "key": "thomas-jefferson",
+              "goto": "q6",
+              "point": 0
+            },
+            {
+              "text": "Andrew Jackson",
+              "key": "andrew-jackson",
+              "goto": "q6",
+              "point": 0
+            },
+            {
+              "text": "James Madison",
+              "key": "james-madison",
+              "goto": "q6",
+              "point": 0
+            }
+          ]
+        }
+      ],
+      "image": "https://placehold.co/600x400",
+      "tooltips": []
+    },
+    {
+      "question-key": "q6",
+      "title": "Who assassinated President Abraham Lincoln?",
+      "description": "Choose the correct answer.",
+      "options": [
+        {
+          "question": "Select the person who assassinated President Abraham Lincoln.",
+          "answers": [
+            {
+              "text": "John Wilkes Booth",
+              "key": "john-wilkes-booth",
+              "goto": "q7",
+              "point": 1
+            },
+            {
+              "text": "Lee Harvey Oswald",
+              "key": "lee-harvey-oswald",
+              "goto": "q7",
+              "point": 0
+            },
+            {
+              "text": "Charles Guiteau",
+              "key": "charles-guiteau",
+              "goto": "q7",
+              "point": 0
+            },
+            {
+              "text": "Leon Czolgosz",
+              "key": "leon-czolgosz",
+              "goto": "q7",
+              "point": 0
+            }
+          ]
+        }
+      ],
+      "image": "https://placehold.co/600x400",
+      "tooltips": []
+    },
+    {
+      "question-key": "q7",
+      "title": "Which amendment abolished slavery in the United States?",
+      "description": "Pick the correct answer.",
+      "options": [
+        {
+          "question": "Select the amendment that abolished slavery in the United States.",
+          "answers": [
+            {
+              "text": "13th Amendment",
+              "key": "13th-amendment",
+              "goto": "q8",
+              "point": 1
+            },
+            {
+              "text": "14th Amendment",
+              "key": "14th-amendment",
+              "goto": "q8",
+              "point": 0
+            },
+            {
+              "text": "15th Amendment",
+              "key": "15th-amendment",
+              "goto": "q8",
+              "point": 0
+            },
+            {
+              "text": "16th Amendment",
+              "key": "16th-amendment",
+              "goto": "q8",
+              "point": 0
+            }
+          ]
+        }
+      ],
+      "image": "https://placehold.co/600x400",
+      "tooltips": []
+    },
+    {
+      "question-key": "q8",
+      "title": "Which president signed the Emancipation Proclamation?",
+      "description": "Select the correct answer.",
+      "options": [
+        {
+          "question": "Choose the president who signed the Emancipation Proclamation.",
+          "answers": [
+            {
+              "text": "Abraham Lincoln",
+              "key": "abraham-lincoln",
+              "goto": "q9",
+              "point": 1
+            },
+            {
+              "text": "Andrew Johnson",
+              "key": "andrew-johnson",
+              "goto": "q9",
+              "point": 0
+            },
+            {
+              "text": "James Buchanan",
+              "key": "james-buchanan",
+              "goto": "q9",
+              "point": 0
+            },
+            {
+              "text": "Ulysses S. Grant",
+              "key": "ulysses-s-grant",
+              "goto": "q9",
+              "point": 0
+            }
+          ]
+        }
+      ],
+      "image": "https://placehold.co/600x400",
+      "tooltips": []
+    },
+    {
+      "question-key": "q9",
+      "title": "Which landmark case established the principle of judicial review?",
+      "description": "Pick the correct answer.",
+      "options": [
+        {
+          "question": "Select the landmark case that established the principle of judicial review.",
+          "answers": [
+            {
+              "text": "Marbury v. Madison",
+              "key": "marbury-v-madison",
+              "goto": "q10",
+              "point": 1
+            },
+            {
+              "text": "Dred Scott v. Sandford",
+              "key": "dred-scott-v-sandford",
+              "goto": "q10",
+              "point": 0
+            },
+            {
+              "text": "Brown v. Board of Education",
+              "key": "brown-v-board-of-education",
+              "goto": "q10",
+              "point": 0
+            },
+            {
+              "text": "Gibbons v. Ogden",
+              "key": "gibbons-v-ogden",
+              "goto": "q10",
+              "point": 0
+            }
+          ]
+        }
+      ],
+      "image": "https://placehold.co/600x400",
+      "tooltips": []
+    },
+    {
+      "question-key": "q10",
+      "title": "Which president is known for the New Deal policies during the Great Depression?",
+      "description": "Select the correct answer.",
+      "options": [
+        {
+          "question": "Choose the president known for the New Deal policies during the Great Depression.",
+          "answers": [
+            {
+              "text": "Franklin D. Roosevelt",
+              "key": "franklin-d-roosevelt",
+              "goto": null,
+              "point": 1
+            },
+            {
+              "text": "Herbert Hoover",
+              "key": "herbert-hoover",
+              "goto": null,
+              "point": 0
+            },
+            {
+              "text": "Harry S. Truman",
+              "key": "harry-s-truman",
+              "goto": null,
+              "point": 0
+            },
+            {
+              "text": "Woodrow Wilson",
+              "key": "woodrow-wilson",
+              "goto": null,
+              "point": 0
+            }
+          ]
+        }
+      ],
+      "image": "https://placehold.co/600x400",
+      "tooltips": []
+    }
+  ]
 }
