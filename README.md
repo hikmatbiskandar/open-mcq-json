@@ -1,4 +1,4 @@
-# JSON Specification for Interactive Questionnaires with Scoring and Pathways
+# JSON Specification for Interactive Questionnaires with Scoring and Branching Pathways
 ## by Hikmat bin Iskandar
 
 This JSON schema defines a convention for representing A/B/C/D questionnaires with scoring, pathways based on answers, and tooltips with attached images. It aims to standardize the format for such questionnaires, making it easier to implement them across various applications and platforms.
