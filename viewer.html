@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Questionnaire</title>
+  <!-- Include Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+  <div id="app">
+    <div v-for="(step, index) in steps" :key="index">
+      <h2>{{ step.title }}</h2>
+      <p>{{ step.description }}</p>
+      <div v-for="(option, idx) in step.options" :key="idx">
+        <p>{{ option.question }}</p>
+        <div v-for="(answer, i) in option.answers" :key="i">
+          <input type="radio" :id="answer.key" :value="answer.key" v-model="answers[step.question-key]">
+          <label :for="answer.key">{{ answer.text }}</label>
+        </div>
+      </div>
+    </div>
+    <button @click="submit">Submit</button>
+  </div>
+
+  <script>
+    // Vue app
+    new Vue({
+      el: '#app',
+      data: {
+        steps: [],
+        answers: {}
+      },
+      mounted() {
+        this.loadJsonData();
+      },
+      methods: {
+        loadJsonData() {
+          fetch('resources/exam1/sample.json')
+            .then(response => response.json())
+            .then(data => {
+              this.steps = data.steps;
+            })
+            .catch(error => {
+              console.error('Error loading JSON:', error);
+            });
+        },
+        submit() {
+          // Process submitted answers
+          console.log("Submitted answers:", this.answers);
+          // Here you can send the answers to a server or handle them as needed
+        }
+      }
+    });
+  </script>
+</body>
+</html>
