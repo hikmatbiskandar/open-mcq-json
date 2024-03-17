@@ -13,6 +13,91 @@ This JSON schema defines a convention for representing A/B/C/D questionnaires wi
 - (optional) Apply different themes and gamification methodologies to the same JSON.
 - (optional) Can also serve as a step-by-step documentation website manual/documentation
 
+# Proposed Structure
+
+example filename: `resources/My Exam/Revision 2009 Sample 1.json`
+
+## Main Structure
+
+```
+{
+  "version": "0.0.1",
+  "author": "Hikmat bin Iskandar,
+  "organization": "Hikmat's Company",
+  "steps":
+  [
+    <refer to Steps object>
+  ]
+}
+
+```
+
+## Steps
+
+Steps are also known as Questions, or Pages, depending on your use case. Basically represents each page that the question is presented to the screen.
+
+```
+{
+  "question-key": "question-1",                   # anchor key for the question (optional) which another prior question can link back to
+  "title": "Question #1",                         # the question's title
+  "description": "The full descriptions",         # the full description
+  
+  "options": [                                    # options for this question
+    <refer to Options object>
+  ],
+
+  "required_keys": [                              # in order to view this question, the user must own this keys
+    "tag1","tag2"                                 # keys can be awarded by answering a prior question
+  ],
+
+  "image": "https://placehold.co/600x400",        # direct link to the image URL
+  "tooltips": [                                   # list of tooltips to appear on top of the image
+    <refer to Tooltips object>                     
+  ]
+}
+```
+
+## Options
+
+```
+"options": [
+  "question": "What is A?",                   # a more simplified, direct question or instructions to appear before the options
+  "answers": [
+    "text":   "A is my answer",
+    "key":    "user-picked-A",                # the key that can be used to access future questions (unique)
+    "goto":   "question-1",                   # redirect user to go here
+    "point"   1                               # the score ( >0 means the answer is answered correctly.)
+  ]
+]
+```
+
+## Tooltips
+
+Tooltips are placed based on percentage coordinate in reference to the size of the image provided. As the sample below provides, 73.3, 3.5 means 73.3% from top of the image and 3.5% from the left of the image size.
+
+```
+"tooltips": [
+    {
+      "text": "Tooltip 1",
+      "location": [
+        90.8, /* x of image by percentage */
+        34.4  /* y of image by percentage */
+      ],
+      "position": "bottom-center"
+    },
+    {
+      "text": "Tooltip 2",
+      "location": [
+        53.0,
+        70.2
+      ],
+      "position": "bottom-center"
+    }
+  ]
+
+```
+
+
 # Directory Structure
 
 The files will be organized in this manner:
