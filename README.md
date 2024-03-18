@@ -36,7 +36,16 @@ example filename: `resources/My Exam/Revision 2009 Sample 1.json`
 
 Steps are also known as Questions, or Pages, depending on your use case. Basically represents each page that the question is presented to the screen.
 
+### CSV Source
 ```
+If it's a string, it must be a csv file with these columns:
+
+no,question,option1,option2,option3,option4,correct_answer,rationale
+```
+
+### Array
+```
+
 {
   "question-key": "question-1",                   # anchor key for the question (optional) which another prior question can link back to
   "title": "Question #1",                         # the question's title
