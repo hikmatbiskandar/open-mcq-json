@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "author": "Hikmat bin Iskandar",
+  "organization": "Hikmat's Company",
+  "title" : "AWS Certified Cloud Practitioner (CLF-CO1) Sample",
+  "steps" : "questions.csv"
+}
