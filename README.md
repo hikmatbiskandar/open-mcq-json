@@ -123,8 +123,19 @@ assets/js/
 assets/img/
 ```
 
-# Usage
+# Use Case Scenario
 Developers can use this JSON schema to represent complex questionnaires in a structured format, enabling easy management of scoring, pathways, and tooltip images associated with each question.
+
+# Installation
+
+- Pull this repo
+- If you have PHP installed, run a small server to test the samples:
+
+```
+php -S localhost:8000
+```
+- Navigate to http://localhost:8000/viewer.html
+
 
 # License
 This project is licensed under the MIT License.
