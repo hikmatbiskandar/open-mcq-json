@@ -68,17 +68,18 @@ no,question,option1,option2,option3,option4,correct_answer,rationale
 
 ## Options
 
+Options may support multiple answers.
+
 ```
 "options": [
-  "question": "What is A?",                   # a more simplified, direct question or instructions to appear before the options
-  "answers": [
     "text":   "A is my answer",
-    "key":    "user-picked-A",                # the key that can be used to access future questions (unique)
-    "goto":   "question-1",                   # redirect user to go here
-    "point"   1                               # the score ( >0 means the answer is answered correctly.)
-  ]
+    "key":    "user-picked-A",         # the key that can be used to access future questions (unique)
+    "goto":   "question-1",            # redirect user to go here (optional, will go to next if unspecified)
+    "point"   1                        # the score ( >0 means the answer is answered correctly.)
 ]
 ```
+
+
 
 ## Tooltips
 
